@@ -1,5 +1,5 @@
 <template>
-  <div class="travel-blog-item">
+  <div class="travel-blog-item flex-s-between">
     <img src="../assets/pexels-photo-3155666.jpeg" />
     <h3>Family Safari Vacation To The Home Of The Gods</h3>
     <p>
