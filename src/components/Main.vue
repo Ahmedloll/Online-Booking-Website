@@ -4,7 +4,8 @@
     <PromotionsList></PromotionsList>
     <DestinationsList></DestinationsList>
     <RecomindationsList></RecomindationsList>
-    <partners></partners>
+    <Partners></Partners>
+    <TravelBlogList></TravelBlogList>
   </main>
 </template>
 
@@ -12,8 +13,9 @@
 import SearchBar from "./SearchBar";
 import PromotionsList from "./PromotionsList";
 import DestinationsList from "./DestinationsList";
-import RecomindationsList from './RecomindationsList';
-import partners from './partners';
+import RecomindationsList from "./RecomindationsList";
+import Partners from "./partners";
+import TravelBlogList from "./TravelBlogList";
 
 export default {
   name: "Main",
@@ -22,7 +24,8 @@ export default {
     PromotionsList,
     DestinationsList,
     RecomindationsList,
-    partners,
+    Partners,
+    TravelBlogList,
   },
 };
 </script>
