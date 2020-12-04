@@ -29,12 +29,7 @@ img {
   width: 100%;
   border-radius: 3px 3px 0 0;
 }
-i.fa-hotel{
-  color: #4C4C4C;
-}
-i.fa-star{
-  color: #E0AD1E;
-}
+
 span{
   padding: 0px 10px;
   color: #4C4C4C;

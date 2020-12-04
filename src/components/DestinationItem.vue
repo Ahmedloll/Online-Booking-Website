@@ -1,5 +1,5 @@
 <template>
-  <div class="promotionitem">
+  <div class="DestinationItem">
     <div class="color">
       Hoi An
     </div>
@@ -8,11 +8,11 @@
 </template>
 <script>
 export default {
-  name: "PromotionItem",
+  name: "DestinationItem",
 };
 </script>
 <style scoped>
-.promotionitem {
+.DestinationItem {
   width: 18%;
   position: relative;
 }

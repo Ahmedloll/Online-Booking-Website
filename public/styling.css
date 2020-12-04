@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .flex-s-between {
   justify-content: space-between;
@@ -24,4 +25,13 @@
 
 a {
   text-decoration: none;
+}
+i{
+  padding:2px;
+}
+i.fa-hotel{
+  color: #4C4C4C;
+}
+i.fa-star{
+  color: #E0AD1E;
 }

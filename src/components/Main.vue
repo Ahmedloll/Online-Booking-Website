@@ -3,6 +3,7 @@
     <SearchBar></SearchBar>
     <PromotionsList></PromotionsList>
     <DestinationsList></DestinationsList>
+    <RecomindationsList></RecomindationsList>
   </main>
 </template>
 
@@ -10,6 +11,7 @@
 import SearchBar from "./SearchBar";
 import PromotionsList from "./PromotionsList";
 import DestinationsList from "./DestinationsList";
+import RecomindationsList from './RecomindationsList';
 
 export default {
   name: "Main",
@@ -17,6 +19,7 @@ export default {
     SearchBar,
     PromotionsList,
     DestinationsList,
+    RecomindationsList,
   },
 };
 </script>
