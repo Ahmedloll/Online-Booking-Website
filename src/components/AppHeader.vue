@@ -1,23 +1,23 @@
 <template>
-  <header class="container flex-s-between layout">
+  <header class="layout">
     <nav class="container flex-s-between">
       <div class="container flex-s-between">
-        <img src="../assets/logo.png" />
+        <img class="logo" src="../assets/logo.png" />
         <h3>NKN</h3>
       </div>
 
       <ul class="container flex-s-between">
         <li class="container">
-          <a href="#">Home</a>
+          <a class="active" href="#">Home</a>
         </li>
         <li class="container">
           <a href="#">Hotels</a>
         </li>
         <li class="container">
-          <a href="#">Promotions</a>
+          <a href="#">Promotions<i class="far fa-angle-down"></i></a>
         </li>
         <li class="container">
-          <a href="#">Destinations</a>
+          <a href="#">Destinations<i class="far fa-angle-down"></i></a>
         </li>
         <li class="container">
           <a href="#">Voucher</a>
@@ -26,7 +26,7 @@
           <a href="#">About Us</a>
         </li>
       </ul>
-      <div class="container flex-s-between">
+      <div class="container flex-s-between sign-container">
         <a href="#">Sign Up</a>
         <a class="login" href="#">log in</a>
       </div>
@@ -41,39 +41,43 @@ export default {
 </script>
 <style scoped>
 header {
+  height: 60px;
   background-color: #2d2d2d;
-  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-nav {
-  width: 100%;
-}
-img {
-  width: 45px;
-  height: 60px;
-}
+
 h3 {
   color: #ffffff;
+  font-family: noto-sans-display;
+  font-size: 20px;
+  line-height: 23px;
 }
+
+li a {
+  color: #9f9f9f;
+}
+.active {
+  color: #e0ad1e;
+}
+.sign-container a {
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
   margin: 0%;
   padding: 0;
   flex-grow: 0.5;
 }
-li {
-  margin: 0 0.25%;
-}
+
 a {
+  font-family: playfair-display;
   color: #e4e4e4;
   margin: auto 5px;
 }
-li a {
-  color: #9f9f9f;
-}
-div a {
-  text-align: center;
-  margin: 20;
-}
+
 a.login {
   width: 113px;
   height: 34px;

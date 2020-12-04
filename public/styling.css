@@ -1,3 +1,9 @@
+.logo {
+  width: 45px;
+  height: 45px;
+  margin: auto 0px;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -26,12 +32,14 @@
 a {
   text-decoration: none;
 }
-i{
-  padding:2px;
+i {
+  padding: 2px;
 }
-i.fa-hotel{
-  color: #4C4C4C;
+i.fa-hotel {
+  color: #4c4c4c;
 }
-i.fa-star{
-  color: #E0AD1E;
+i.fa-star {
+  color: #e0ad1e;
 }
+
+
