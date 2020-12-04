@@ -1,12 +1,12 @@
 <template>
-  <header class="container layout">
-    <nav class="container layout">
-      <div class="container">
+  <header class="container flex-s-between layout">
+    <nav class="container flex-s-between">
+      <div class="container flex-s-between">
         <img src="../assets/logo.png" />
         <h3>NKN</h3>
       </div>
 
-      <ul class="container">
+      <ul class="container flex-s-between">
         <li class="container">
           <a href="#">Home</a>
         </li>
@@ -26,7 +26,7 @@
           <a href="#">About Us</a>
         </li>
       </ul>
-      <div class="container">
+      <div class="container flex-s-between">
         <a href="#">Sign Up</a>
         <a class="login" href="#">log in</a>
       </div>
@@ -65,7 +65,6 @@ li {
 }
 a {
   color: #e4e4e4;
-  text-decoration: none;
   margin: auto 5px;
 }
 li a {

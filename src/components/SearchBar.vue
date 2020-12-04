@@ -1,5 +1,5 @@
 <template>
-  <section class="layout s-padding-tob-bottom">
+  <section class="s-padding-tob-bottom">
     <div class="search-div">
       <form class="bgwhite">
         <input />

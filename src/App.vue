@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bgdark outer-layout">
     <AppHeader></AppHeader>
     <Main></Main>
   </div>
