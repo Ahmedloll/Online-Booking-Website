@@ -1,6 +1,6 @@
 <template>
-  <header class="container">
-    <nav class="container">
+  <header class="container layout">
+    <nav class="container layout">
       <div class="container">
         <img src="../assets/logo.png" />
         <h3>NKN</h3>
@@ -40,22 +40,16 @@ export default {
 };
 </script>
 <style scoped>
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 header {
   background-color: #2d2d2d;
   height: 60px;
-  padding: 10px 10%;
 }
-nav{
+nav {
   width: 100%;
 }
 img {
   width: 45px;
+  height: 60px;
 }
 h3 {
   color: #ffffff;
@@ -83,7 +77,7 @@ div a {
 }
 a.login {
   width: 113px;
-  height: 36px;
+  height: 34px;
   border: 1px solid #e0ad1e;
   border-radius: 5px;
   line-height: 36px;
