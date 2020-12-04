@@ -25,7 +25,9 @@ export default {
   width: 30%;
 }
 img {
+  
   width: 100%;
+  border-radius: 3px 3px 0 0;
 }
 i.fa-hotel{
   color: #4C4C4C;
