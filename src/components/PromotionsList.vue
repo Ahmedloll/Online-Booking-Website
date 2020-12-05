@@ -12,7 +12,7 @@
       <PromotionItem
         v-for="image in images"
         :image="image"
-        :key="image"
+        :key="image.caption"
       ></PromotionItem>
     </div>
   </section>
