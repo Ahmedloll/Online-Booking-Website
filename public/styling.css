@@ -70,3 +70,7 @@ i.fa-hotel {
 i.fa-star {
   color: #e0ad1e;
 }
+.col-container{
+  display: flex;
+  flex-direction: column;
+}

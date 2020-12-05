@@ -1,21 +1,24 @@
 <template>
-  <div class="bgdark outer-layout">
-    <AppHeader></AppHeader>
+  <div class=" outer-layout">
+    <!-- <AppHeader></AppHeader>
     <Main></Main>
-    <Footer></Footer>
+    <Footer></Footer> -->
+    <Logging></Logging>
   </div>
 </template>
 <script>
-import AppHeader from "./components/AppHeader";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+// import AppHeader from "./components/AppHeader";
+// import Main from "./components/Main";
+// import Footer from "./components/Footer";
+import Logging from "./components/Logging";
 
 export default {
   name: "App",
   components: {
-    AppHeader,
-    Main,
-    Footer
+    // AppHeader,
+    // Main,
+    // Footer,
+    Logging,
   },
 };
 </script>
