@@ -29,7 +29,7 @@ export default {
         {
           src:
             "https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-          caption: "Family Safari Vacation To The Home Of The Gods",
+          caption: "Family Safari Vacation To The paradise of the travelers",
         },
         {
           src:
