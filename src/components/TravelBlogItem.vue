@@ -1,17 +1,15 @@
 <template>
   <div class="travel-blog-item flex-s-between">
-    <img src="../assets/pexels-photo-3155666.jpeg" />
-    <h3>Family Safari Vacation To The Home Of The Gods</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque illum
-      est enim veritatis ut
-    </p>
+    <img :src="blog.image" />
+    <h3>{{ blog.tag }}</h3>
+    <p>{{ blog.description }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: "TravelBlogItem",
+  props: ["blog"],
 };
 </script>
 
@@ -21,5 +19,14 @@ export default {
 }
 img {
   width: 100%;
+  height: 195px;
+  border-radius: 3px 3px 0px 0px;
+}
+P {
+  font-family: noto-sans-display;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #4c4c4c;
 }
 </style>
