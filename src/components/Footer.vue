@@ -1,10 +1,7 @@
 <template>
-  <footer class="container layout flex-s-between">
+  <footer class="container flex-s-between">
     <div>
-      <div class="container">
-        <img src="../assets/logo.png" />
-        <h3>NKN</h3>
-      </div>
+      <Logo></Logo>
       <div>302 Willburn Mountain Apt,518</div>
       <div>685-290-5343</div>
       <div>angel_olson@gmail.com</div>
@@ -60,11 +57,18 @@
   </footer>
 </template>
 <script>
+import Logo from "./Logo";
 export default {
   name: "Footer",
+  components: {
+    Logo,
+  },
 };
 </script>
 <style scoped>
+footer {
+  padding: 40px 10.20833333333333%;
+}
 img {
   width: 45px;
   height: 60px;

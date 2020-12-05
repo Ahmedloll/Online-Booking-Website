@@ -1,11 +1,7 @@
 <template>
   <header class="layout">
     <nav class="container flex-s-between">
-      <div class="container flex-s-between">
-        <img class="logo" src="../assets/logo.png" />
-        <h3>NKN</h3>
-      </div>
-
+      <Logo></Logo>
       <ul class="container flex-s-between">
         <li class="container">
           <a class="active" href="#">Home</a>
@@ -35,8 +31,12 @@
 </template>
 
 <script>
+import Logo from "./Logo";
 export default {
   name: "AppHeader",
+  components: {
+    Logo,
+  },
 };
 </script>
 <style scoped>
@@ -46,13 +46,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-}
-
-h3 {
-  color: #ffffff;
-  font-family: noto-sans-display;
-  font-size: 20px;
-  line-height: 23px;
 }
 
 li a {
