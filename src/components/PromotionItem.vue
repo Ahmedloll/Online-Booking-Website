@@ -1,7 +1,7 @@
 <template>
   <div class="promotionitem">
-    <img :src="image" />
-    <h3>Family Safari Vacation To The Home Of The Gods</h3>
+    <img :src="image.src" />
+    <h3>{{ image.caption }}</h3>
     <div class="container">
       <i class="fas fa-hotel"></i>
       <span>JW Mariot</span>
@@ -16,18 +16,12 @@
   </div>
 </template>
 
-
-
-
 <script>
 export default {
   name: "PromotionItem",
   props: ["image"],
 };
 </script>
-
-
-
 
 <style scoped>
 .promotionitem {

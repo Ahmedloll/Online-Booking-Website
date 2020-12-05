@@ -26,9 +26,23 @@ export default {
   data() {
     return {
       images: [
-        "https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-        "https://images.pexels.com/photos/4112236/pexels-photo-4112236.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-        "https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        {
+          src:
+            "https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+          caption: "Family Safari Vacation To The Home Of The Gods",
+        },
+        {
+          src:
+            "https://images.pexels.com/photos/4112236/pexels-photo-4112236.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+          caption:
+            "Cde Issues Health Alert Notice For Travelers To Usa From Hon",
+        },
+        {
+          src:
+            "https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+          caption:
+            "Airport Hotels The Right Way To Start A Short Break Holiday",
+        },
       ],
     };
   },
@@ -52,3 +66,6 @@ a.active {
   font-weight: bold;
 }
 </style>
+
+
+
