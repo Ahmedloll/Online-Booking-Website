@@ -2,16 +2,18 @@
   <section class="bgwhite layout">
     <div class="container flex-s-between">
       <h2>BEST PROMOTIONS</h2>
-      <div>
-        <a href="#">Combo</a>
-        <a href="#">Hotels</a>
+      <div class="container">
+        <a class="active" href="/">Combo</a>
+        <a href="/">Hotels</a>
       </div>
-      <a href="#">View All</a>
+      <a class="view-all-link" href="">View All</a>
     </div>
     <div class="container flex-s-between">
-      <PromotionItem></PromotionItem>
-      <PromotionItem></PromotionItem>
-      <PromotionItem></PromotionItem>
+      <PromotionItem
+        v-for="image in images"
+        :image="image"
+        :key="image"
+      ></PromotionItem>
     </div>
   </section>
 </template>
@@ -21,6 +23,15 @@ import PromotionItem from "./PromotionItem";
 
 export default {
   name: "PromotionsList",
+  data() {
+    return {
+      images: [
+        "https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+        "https://images.pexels.com/photos/4112236/pexels-photo-4112236.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      ],
+    };
+  },
   components: {
     PromotionItem,
   },
@@ -28,4 +39,16 @@ export default {
 </script>
 
 <style scoped>
+a {
+  font-family: playfair-display;
+
+  line-height: 21px;
+  color: #4c4c4c;
+  margin: auto 10px;
+}
+a.active {
+  color: black;
+  border-bottom: 2px solid #e0ad1e;
+  font-weight: bold;
+}
 </style>

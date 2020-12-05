@@ -1,6 +1,6 @@
 <template>
   <div class="promotionitem">
-    <img src="../assets/pexels-photo-3155666.jpeg" />
+    <img :src="image" />
     <h3>Family Safari Vacation To The Home Of The Gods</h3>
     <div class="container">
       <i class="fas fa-hotel"></i>
@@ -15,23 +15,32 @@
     </div>
   </div>
 </template>
+
+
+
+
 <script>
 export default {
   name: "PromotionItem",
+  props: ["image"],
 };
 </script>
+
+
+
+
 <style scoped>
 .promotionitem {
   width: 30%;
 }
 img {
-  
   width: 100%;
+  height: 208px;
   border-radius: 3px 3px 0 0;
 }
 
-span{
+span {
   padding: 0px 10px;
-  color: #4C4C4C;
+  color: #4c4c4c;
 }
 </style>

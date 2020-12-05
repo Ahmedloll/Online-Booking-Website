@@ -4,6 +4,31 @@
   margin: auto 0px;
 }
 
+h2 {
+  font-family: playfair-display;
+  font-weight: 700;
+  
+}
+h3 {
+  font-family: playfair-display;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2D2D2D;
+  
+}
+.view-all-link {
+  /* font-family: playfair-display; */
+  font-weight: 400;
+  font-style: italic;
+  color: #4c4c4c;
+  font-size: 14px;
+  line-height: 19px;
+  height: fit-content;
+  margin: auto 0px;
+}
+
+/* /////////// */
 .container {
   display: flex;
   flex-direction: row;
@@ -13,7 +38,7 @@
   justify-content: space-between;
 }
 .layout {
-  padding: 10px 10.20833333333333%;
+  padding: 20px 10.20833333333333% 50px ;
 }
 .outer-layout {
   padding: 0px 10.20833333333333%;
@@ -41,5 +66,3 @@ i.fa-hotel {
 i.fa-star {
   color: #e0ad1e;
 }
-
-
