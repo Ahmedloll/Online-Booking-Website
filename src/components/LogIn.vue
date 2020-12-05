@@ -1,6 +1,6 @@
 <template>
   <div class="signUp">
-    <h1>CREATE NEW ACCOUNT</h1>
+    <h1>SIGN IN NOW</h1>
     <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui commodi
       dolorem illo odit, tenetur eligendi sint fugit eum laudantium
@@ -10,15 +10,13 @@
       <input type="email" placeholder="company@company.com" required />
       <label>Password</label>
       <input type="password" placeholder="8-20 Characters" required />
-      <label>Confirm Password</label>
-      <input type="password" placeholder="Confirm your password" required />
       <div class="container flex-s-between">
-        <input type="submit" class="bgdark" value="Sign up" />
+        <input type="submit" class="bgdark" value="Sign in" />
         <div>
           <span
-            >Already have an account?
-            <router-link class="login" v-bind:to="'/logging/login'"
-              >Sign in</router-link
+            >You don't have an account?
+            <router-link v-bind:to="'/logging/signup'"
+              >Sign up</router-link
             ></span
           >
         </div>
@@ -29,13 +27,13 @@
 
 <script>
 export default {
-  name: "SignUp",
+  name: "LogIn",
 };
 </script>
 <style scoped>
 .signUp {
   font-family: playfair-display;
-  padding: 130px 75px;
+  padding: 130px 8%;
   margin: 0;
 }
 h1 {
@@ -56,7 +54,7 @@ label {
 input {
   font-family: playfair-display;
   font-size: 16px;
-  padding: 0px 20px;
+  padding: 0px 2%;
   width: 458px;
   height: 58px;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -72,7 +70,7 @@ input[type="submit"] {
   border-radius: 3px;
   margin: 0;
 }
-input[placeholder="Confirm your password"] + div {
+input[placeholder="8-20 Characters"] + div {
   width: 500px;
 }
 input[type="submit"] + div {

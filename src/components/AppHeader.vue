@@ -9,11 +9,25 @@
         <li class="container">
           <a href="#">Hotels</a>
         </li>
-        <li class="container">
+        <li class="container dropdown">
           <a href="#">Promotions<i class="far fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Promotions</a></li>
+            </ul>
+          </div>
         </li>
-        <li class="container">
-          <a href="#">Destinations<i class="far fa-angle-down"></i></a>
+        <li class="container dropdown">
+          <a href="#">Destinations <i class="far fa-angle-down"></i></a>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Destinations</a></li>
+            </ul>
+          </div>
         </li>
         <li class="container">
           <a href="#">Voucher</a>
@@ -23,8 +37,10 @@
         </li>
       </ul>
       <div class="container flex-s-between sign-container">
-        <a href="#">Sign Up</a>
-        <a class="login" href="#">log in</a>
+        <router-link v-bind:to="'/logging/signup'">Sign up</router-link>
+        <router-link class="login" v-bind:to="'/logging/login'"
+          >Sign in</router-link
+        >
       </div>
     </nav>
   </header>
@@ -51,6 +67,10 @@ header {
 li a {
   color: #9f9f9f;
 }
+li i {
+  line-height: 0.5px;
+}
+
 .active {
   color: #e0ad1e;
 }
@@ -77,5 +97,23 @@ a.login {
   border: 1px solid #e0ad1e;
   border-radius: 5px;
   line-height: 36px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 70px;
+  background-color: #2d2d2d;
+  color: #9f9f9f;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown-content li {
+  margin-top: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 </style>

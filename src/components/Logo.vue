@@ -16,4 +16,14 @@ h3 {
   font-size: 20px;
   line-height: 23px;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 45px;
+  height: 45px;
+  margin: auto 0px;
+}
 </style>

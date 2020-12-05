@@ -1,23 +1,21 @@
 <template>
-  <div class="container">
+  <div class="container outer-layout">
     <div class="half">
       <div class="logo-wrap">
         <Logo></Logo>
       </div>
     </div>
     <div class="half">
-      <SignUp></SignUp>
+      <router-view></router-view>
     </div>
   </div>
 </template>
 <script>
 import Logo from "./Logo";
-import SignUp from "./SignUp";
 export default {
   name: "Logging",
   components: {
     Logo,
-    SignUp,
   },
 };
 </script>
@@ -32,5 +30,13 @@ export default {
 
 div.logo-wrap {
   padding: 740px 0px 0px 35px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.outer-layout {
+  padding: 0px 10.20833333333333%;
 }
 </style>
