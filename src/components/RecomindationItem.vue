@@ -1,8 +1,8 @@
 <template>
   <div class="RecomindationItem container">
-    <img class="RecomindationItem" src="../assets/pexels-photo-4636627.jpeg" />
+    <img class="RecomindationItem" :src="hotel.image" />
     <div class="RecomindationItem">
-      <h3>Family Safari Vacation To The Home Of The Gods</h3>
+      <h3>{{hotel.tag}}</h3>
       <div class="margin">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -27,6 +27,7 @@
 <script>
 export default {
   name: "RecomindationItem",
+  props: ["hotel"],
 };
 </script>
 <style scoped>

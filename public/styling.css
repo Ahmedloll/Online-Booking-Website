@@ -7,7 +7,6 @@
 h2 {
   font-family: playfair-display;
   font-weight: 700;
-  
 }
 h3 {
   font-family: playfair-display;
@@ -27,7 +26,9 @@ h3 {
   height: fit-content;
   margin: auto 0px;
 }
-
+.padd-bottom {
+  padding-bottom: 20px;
+}
 /* /////////// */
 .container {
   display: flex;
@@ -38,7 +39,10 @@ h3 {
   justify-content: space-between;
 }
 .layout {
-  padding: 20px 10.20833333333333% 50px ;
+  padding: 20px 10.20833333333333% 50px;
+}
+header.layout {
+  padding: 10px 10.20833333333333%;
 }
 .outer-layout {
   padding: 0px 10.20833333333333%;

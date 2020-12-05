@@ -1,6 +1,6 @@
 <template>
   <section class="bgwhite layout">
-    <div class="container flex-s-between">
+    <div class="container flex-s-between padd-bottom">
       <h2>DESTINAIONS</h2>
       <div class="container">
         <a class="active" href="#">Vietnam</a>
