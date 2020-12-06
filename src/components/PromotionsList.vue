@@ -10,6 +10,7 @@
     </div>
     <div class="container flex-s-between">
       <PromotionItem
+        @detailSelect="ondetailSelect"
         v-for="image in images"
         :image="image"
         :key="image.caption"
@@ -19,10 +20,16 @@
 </template>
 
 <script>
+import { router } from "../main";
 import PromotionItem from "./PromotionItem";
 
 export default {
   name: "PromotionsList",
+  methods: {
+    ondetailSelect() {
+      router.push("/details");
+    },
+  },
   data() {
     return {
       images: [

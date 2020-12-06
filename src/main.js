@@ -5,13 +5,28 @@ import Logging from "./components/Logging";
 import Layout from "./components/Layout";
 import SignUp from "./components/SignUp";
 import LogIn from "./components/LogIn";
+import main from "./components/Main";
+import details from "./components/details";
 
 Vue.use(VueRouter);
 
 export const router = new VueRouter({
   mode: "history",
   routes: [
-    { path: "", component: Layout },
+    {
+      path: "",
+      component: Layout,
+      children: [
+        {
+          path: "",
+          component: main,
+        },
+        {
+          path: "/details",
+          component: details,
+        },
+      ],
+    },
     {
       path: "/logging",
       component: Logging,

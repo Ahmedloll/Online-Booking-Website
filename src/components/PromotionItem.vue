@@ -1,5 +1,5 @@
 <template>
-  <div class="promotionitem">
+  <div @click="onDetailSelect" class="promotionitem">
     <img :src="image.src" />
     <h3>{{ image.caption }}</h3>
     <div class="container">
@@ -20,11 +20,17 @@
 export default {
   name: "PromotionItem",
   props: ["image"],
+  methods: {
+    onDetailSelect() {
+      this.$emit("detailSelect");
+    },
+  },
 };
 </script>
 
 <style scoped>
 .promotionitem {
+  cursor: pointer;
   width: 30%;
 }
 img {

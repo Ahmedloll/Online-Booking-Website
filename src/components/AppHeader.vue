@@ -4,7 +4,7 @@
       <Logo></Logo>
       <ul class="container flex-s-between">
         <li class="container">
-          <a class="active" href="#">Home</a>
+          <router-link class="active" v-bind:to="'/'">Home</router-link>
         </li>
         <li class="container">
           <a href="#">Hotels</a>
