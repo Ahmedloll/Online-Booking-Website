@@ -20,11 +20,27 @@ export default {
 };
 </script>
 <style scoped>
+@media only screen and (max-width: 1000px) {
+  .half {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .half {
+    width: 50%;
+  }
+  .container {
+    flex-direction: row;
+  }
+}
+
 .half:first-child {
   background-image: url("../assets/images/pexels-deeana-creates-2565222.jpg");
 }
 .half {
-  width: 50%;
   min-height: 100vh;
 }
 
@@ -33,7 +49,7 @@ div.logo-wrap {
 }
 .container {
   display: flex;
-  flex-direction: row;
+
   flex-wrap: wrap;
 }
 .outer-layout {

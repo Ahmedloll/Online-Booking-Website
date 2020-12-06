@@ -31,6 +31,17 @@ export default {
 };
 </script>
 <style scoped>
+@media only screen and (max-width: 1537px) {
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1537px) {
+  input[type="submit"] {
+    width: 35%;
+  }
+}
+
 .signUp {
   font-family: playfair-display;
   padding: 130px 8%;
@@ -55,23 +66,22 @@ input {
   font-family: playfair-display;
   font-size: 16px;
   padding: 0px 2%;
-  width: 458px;
+  width: 73%;
   height: 58px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   margin: 0px 0px 40px;
 }
 input[type="submit"] {
-  width: 175px;
   color: #e0ad1e;
   letter-spacing: 0.34px;
   height: 50px;
   border: none;
   border-radius: 3px;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 input[placeholder="8-20 Characters"] + div {
-  width: 500px;
+  width: 77%;
 }
 input[type="submit"] + div {
   height: fit-content;
