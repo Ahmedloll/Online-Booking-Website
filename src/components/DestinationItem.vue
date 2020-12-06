@@ -11,8 +11,23 @@ export default {
 };
 </script>
 <style scoped>
+@media only screen and (max-width: 1280px) {
+  .DestinationItem {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .DestinationItem {
+      width: 18%;
+
+  }
+}
+@media only screen and (max-width: 580px) {
+  .DestinationItem {
+    width: 100%;
+  }
+}
 .DestinationItem {
-  width: 18%;
   position: relative;
 }
 img {

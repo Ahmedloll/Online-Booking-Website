@@ -39,13 +39,19 @@ div.search-div {
   padding-top: 400px;
   text-align: -webkit-center;
 }
+@media only screen and (max-width: 1350px) {
+  form {
+    width: 30%;
+  }
+}
 form {
-  width: fit-content;
+  width: 66%;
   padding: 12px 10px;
   border-radius: 3px;
 }
 input,
 input[type="submit"] {
+  width: 75%;
   padding: 0 10px 0 28px;
   height: 34px;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -54,24 +60,23 @@ input[type="submit"] {
 }
 
 input[type="submit"] {
-  width: 173px;
+  width: 100%;
   font-family: playfair-display;
   font-size: 14px;
   line-height: 19px;
   color: #e0ad1e;
   padding: 0;
 }
-input[placeholder="Destinattions"] {
-  width: 150px;
+@media only screen and (max-width: 1350px) {
+  .icon-handler {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
 }
-input[placeholder="Check in- Check out"] {
-  width: 182px;
-}
-input[placeholder="0 Adults - 0 Child - Room"] {
-  width: 258px;
-}
-
 .icon-handler {
+  width: 25%;
   position: relative;
 }
 .icon-handler i {

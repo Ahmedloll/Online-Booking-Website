@@ -74,7 +74,12 @@ li i {
 .active {
   color: #e0ad1e;
 }
+
+.sign-container {
+  width: 18.5%;
+}
 .sign-container a {
+  width: 30%;
   text-align: center;
 }
 
@@ -92,7 +97,7 @@ a {
 }
 
 a.login {
-  width: 113px;
+  width: 70%;
   height: 34px;
   border: 1px solid #e0ad1e;
   border-radius: 5px;
@@ -116,4 +121,17 @@ a.login {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+@media only screen and (max-width: 1280px) {
+  ul.container {
+    display: none;
+  }
+}
 </style>
+
+
+
+@media only screen and (max-width: 1280px) {
+  ul.container {
+    background-color:red;
+  }
+}

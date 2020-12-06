@@ -10,7 +10,7 @@
       </div>
       <a class="view-all-link" href="#">View All</a>
     </div>
-    <div class="container flex-s-between">
+    <div class="container flex-s-between dest">
       <DestinationItem
         v-for="destinaion in destinaions"
         :destinaion="destinaion"
@@ -63,6 +63,9 @@ export default {
 </script>
 
 <style scoped>
+.dest{
+  flex-wrap: wrap;
+}
 a {
   font-family: playfair-display;
 

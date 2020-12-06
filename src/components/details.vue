@@ -4,13 +4,13 @@
     <p>
       THIS IS JUST FOR SHOWING THE ROUTER RESULT <br />
       I HAD NO TIME TO IMPLEMENT THIS COMPONENT <br />
-      SORRY 
+      SORRY
     </p>
   </div>
 </template>
 <script>
 export default {
-  name: "details",
+  name: "Details",
 };
 </script>
-<style scoped>
+

@@ -29,9 +29,26 @@ export default {
 </script>
 
 <style scoped>
+@media only screen and (max-width: 1280px) {
+  .promotionitem {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .promotionitem {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .promotionitem {
+    width: 100%;
+  }
+}
+.container {
+  flex-wrap: wrap;
+}
 .promotionitem {
   cursor: pointer;
-  width: 30%;
 }
 img {
   width: 100%;
